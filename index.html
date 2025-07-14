@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LifeChoices Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>LifeChoices<br>Simulator</h1>
+    <p class="description">
+      Make choices for each day and<br>
+      receive a final life score based<br>
+      on your decisions.
+    </p>
+    <button class="start-btn" id="startBtn">START</button>
+
+    
+  </div>
+  
+   <!-- DAY 1 SCREEN -->
+  <div id="day1" class="day-screen" style="display: none;">
+      <h2>🟠 Day 1 — Monday:<br><span>A New Beginning</span></h2>
+      <p class="intro">
+        You've got a whole week ahead of you,<br>
+        and it's up to you how to start it off.<br>
+        What's your plan for today?
+      </p>
+
+      <div class="card" id="day1-option1">
+        <h3>🔘 Create a realistic weekly plan</h3>
+        <p>💬 Start the week strong by listing your top goals and scheduling tasks.</p>
+      </div>
+
+      <div class="card" id="day1-option2">
+        <h3>🔘 Do 20 minutes of exercise or stretching</h3>
+        <p>💬 Loosen up after the weekend and boost your focus.</p>
+      </div>
+
+      <div class="card" id="day1-option3">
+        <h3>🔘 Clean your personal space</h3>
+        <p>💬 Tidy up your room or desk to reset your environment.</p>
+      </div>
+      <button class="next-btn" id="nextDay1">NEXT</button>
+  </div>
+  <!-- Day 2 -->
+<div id="day2" class="day-screen" style="display: none;">
+  <h2>🔵 Day 2 — Tuesday: <span>Focus & Action</span></h2>
+  <p class="intro">How will you channel your energy today?</p>
+
+  <div class="card" id="day2-option1">
+    <h3>🔘 Start a personal hobby project</h3>
+    <p>💬 Work on something you love: writing, drawing, gaming, crafts.</p>
+  </div>
+
+  <div class="card" id="day2-option2">
+    <h3>🔘 Watch movie and spend time at home</h3>
+    <p>💬 Watch a movie and eat some snacks and cereals at home</p>
+  </div>
+
+  <div class="card" id="day2-option3">
+    <h3>🔘 Do 10-15 minutes of focused learning</h3>
+    <p>💬 Learn something new from a YouTube video or short course.</p>
+  </div>
+  <button class="next-btn" id="nextDay2">NEXT</button>
+</div>
+
+<!-- Day 3 -->
+<div id="day3" class="day-screen" style="display: none;">
+  <h2>🟣 Day 3 — Wednesday: <span>Midweek Reflection</span></h2>
+  <p class="intro">Take a breath and look inward.</p>
+
+  <div class="card" id="day3-option1">
+    <h3>🔘 Go for a long walk </h3>
+    <p>💬 Take a slow walk in the downtown.</p>
+  </div>
+
+  <div class="card" id="day3-option2">
+    <h3>🔘 Write a journal entry</h3>
+    <p>💬 How are you feeling? What could you do better tomorrow?</p>
+  </div>
+
+  <div class="card" id="day3-option3">
+    <h3>🔘 Listen to a podcast or audiobook</h3>
+    <p>💬 Choose something inspiring or funny while you relax.</p>
+  </div>
+  <button class="next-btn" id="nextDay3">NEXT</button>
+</div>
+
+<!-- Day 4 -->
+<div id="day4" class="day-screen" style="display: none;">
+  <h2>🟢 Day 4 — Thursday: <span>Energy Boost</span></h2>
+  <p class="intro">Re-energize yourself and plan ahead.</p>
+
+  <div class="card" id="day4-option1">
+    <h3>🔘 Do a mini home workout</h3>
+    <p>💬 Try 15 minutes of exercise to release tension.</p>
+  </div>
+
+  <div class="card" id="day4-option2">
+    <h3>🔘 Organize your digital life</h3>
+    <p>💬 Clean out your emails, photos, or app folders.</p>
+  </div>
+
+  <div class="card" id="day4-option3">
+    <h3>🔘 Plan something fun for the weekend</h3>
+    <p>💬 Search for events, movies, or places you want to visit.</p>
+  </div>
+  <button class="next-btn" id="nextDay4">NEXT</button>
+</div>
+
+<!-- Day 5 -->
+<div id="day5" class="day-screen" style="display: none;">
+  <h2>🔴 Day 5 — Friday: <span>Social Evening Vibes</span></h2>
+  <p class="intro">Celebrate the end of the week.</p>
+
+  <div class="card" id="day5-option1">
+    <h3>🔘 Go out for a movie or live theatre 🎭</h3>
+    <p>💬 Enjoy a story on the big screen or a local performance.</p>
+  </div>
+
+  <div class="card" id="day5-option2">
+    <h3>🔘 Invite a friend over or join a group chat</h3>
+    <p>💬 Catch up and share a few laughs - it's Friday!</p>
+  </div>
+
+  <div class="card" id="day5-option3">
+    <h3>🔘 Order takeout and watch your comfort show</h3>
+    <p>💬 Relax, grab your favorite food, and unwind.</p>
+  </div>
+  <button class="next-btn" id="nextDay5">NEXT</button>
+</div>
+
+<!-- Day 6 -->
+<div id="day6" class="day-screen" style="display: none;">
+  <h2>🟡 Day 6 — Saturday: <span>Explore and Enjoy</span></h2>
+  <p class="intro">Your day to explore freely and enjoy the weekend.</p>
+
+  <div class="card" id="day6-option1">
+    <h3>🔘 Go out to a cafe, restaurant, or street food event</h3>
+    <p>💬 Treat yourself to something tasty and new.</p>
+  </div>
+
+  <div class="card" id="day6-option2">
+    <h3>🔘 Visit a museum, art gallery, or market</h3>
+    <p>💬 Enjoy culture or support local creators.</p>
+  </div>
+
+  <div class="card" id="day6-option3">
+    <h3>🔘 Hang out with friends (bar, game night, concert)</h3>
+    <p>💬 Pick something social and fun, even if just a walk together.</p>
+  </div>
+  <button class="next-btn" id="nextDay6">NEXT</button>
+</div>
+
+<!-- Day 7 -->
+<div id="day7" class="day-screen" style="display: none;">
+  <h2>🟤 Day 7 — Sunday: <span>Nature & Recharge</span></h2>
+  <p class="intro">Let nature help you reset before the new week.</p>
+
+  <div class="card" id="day7-option1">
+    <h3>🔘 Go for a nature walk, hike, or picnic</h3>
+    <p>💬 Fresh air, trees, and sunlight - perfect for peace.</p>
+  </div>
+
+  <div class="card" id="day7-option2">
+    <h3>🔘 Go fishing or to a quiet lake/park</h3>
+    <p>💬 Relax with water sounds and your thoughts.</p>
+  </div>
+
+  <div class="card" id="day7-option3">
+    <h3>🔘 Do a gentle reset: laundry, groceries, self-care</h3>
+    <p>💬 Get ready for a smooth Monday start.</p>
+  </div>
+  <button class="next-btn" id="nextDay7">NEXT</button>
+</div>
+<!-- Results Screen -->
+<div id="results-screen" class="day-screen" style="display: none;">
+  <h2 class="results-title">RESULTS</h2>
+
+  <div class="results-bar">
+    <span>😊 Happiness</span>
+    <div class="bar">
+      <div class="bar-fill" id="bar-happiness" style="width: 85%;">85</div>
+    </div>
+  </div>
+
+  <div class="results-bar">
+    <span>💰 Wealth</span>
+    <div class="bar">
+      <div class="bar-fill" id="bar-wealth" style="width: 45%;">95</div>
+    </div>
+  </div>
+
+  <div class="results-bar">
+    <span>❤️ Health</span>
+    <div class="bar">
+      <div class="bar-fill" id="bar-health" style="width: 70%;">75</div>
+    </div>
+  </div>
+<p class="results-message"></p>
+
+  
+
+  <button class="restart-btn" id="restartBtn">RESTART</button>
+
+
+  <p class="footer-title">LifeChoice Simulator</p>
+</div>
+
+<div class="footer-left">© 2025 LifeChoice Simulator. All rights reserved.</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
