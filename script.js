@@ -28,8 +28,22 @@ allCards.forEach((card) => {
   });
 });
 
-//start button
+
 document.getElementById("startBtn").onclick = function () {
+  const firstName = document.getElementById("firstName").value.trim();
+  const lastName = document.getElementById("lastName").value.trim();
+  const age = parseInt(document.getElementById("age").value, 10);
+
+  if (!firstName || !lastName || !age) {
+    alert("Please fill in all the fields.");
+    return;
+  }
+
+  if (age < 18) {
+    alert("You must be at least 18 years old to start the game.");
+    return;
+  }
+//if requierements met, starts the game
   document.querySelector(".container").style.display = "none";
   document.getElementById("day1").style.display = "block";
 };
